@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>Click me</button>
+<script>
+    'use strict';
+    const button = document.querySelector('button');
+
+    function popUp(noticed) {
+      alert('This ' + noticed.currentTarget.tagName + ' was clicked');
+    }
+button.addEventListener('click', popUp);
+</script>
+
+</body>
+</html>

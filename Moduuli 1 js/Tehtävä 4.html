@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict'
+let name = prompt('Give your name:');
+
+    const classes = Math.floor(Math.random() * 4) +1;
+    switch (classes) {
+      case 1 :
+        console.log(`${name}, you are Gryffindor`);
+        break;
+      case 2:
+        console.log(`${name}, you are Slytherin`);
+        break;
+      case 3:
+        console.log(`${name}, you are Hufflepuff`);
+        break;
+      case 4:
+        console.log(`${name}, you are Ravenclaw`);
+        break;
+      default:
+        console.log("Invalid class.");
+    }
+
+
+
+</script>
+
+</body>
+</html>

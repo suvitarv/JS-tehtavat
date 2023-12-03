@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ol></ol>
+<script>
+  'use strict'
+  const participants = parseInt(prompt('How many participants?'))
+
+  let list = []
+
+  for (let i = 1; i <= participants; i++) {
+    let name = prompt('Give a name:');
+    list.push(name);
+
+  }
+
+  for (let i = 0; i <= list.length - 1; i++) {
+    let li = document.querySelector('ol').
+          appendChild(document.createElement('li'));
+    let list1 = list.sort();
+    li.innerHTML = list1[i];
+  }
+
+</script>
+</body>
+</html>

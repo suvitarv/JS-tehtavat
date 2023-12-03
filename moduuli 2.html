@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    'use strict'
+    const numerot = []
+
+    let index = 0
+    let numero;
+    do {
+      let numero = parseInt(prompt('Give a number (0 quits).'));
+      if (numero!==0) {
+        numerot[index++] = numero
+      }
+    } while (parseInt(numero)!==0);
+
+    numerot.sort((a,b) => b-a);
+    for (let i = 0; i<numerot.length; i++) {
+    console.log(numerot[i])
+    }
+
+    document.getElementById().innerText = resultString
+</script>
+
+</body>
+</html>

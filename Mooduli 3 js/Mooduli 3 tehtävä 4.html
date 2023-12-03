@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>Task 4</h4>
+<ul id="target"></ul>
+<script>
+  'use strict';
+  const students = [
+    {
+      name: 'John',
+      nmb: '2345768',
+    },
+    {
+      name: 'Paul',
+      nmb: '2134657'
+    },
+    {
+      name: 'Jones',
+      nmb: '5423679'
+    },
+  ];
+
+  for (let i = 0; i < students.length; i++) {
+    let element = document.querySelector('#target').
+            appendChild(document.createElement('option'));
+    element.setAttribute('value', students[i]['nmb']);
+    element.innerHTML = students[i]['name'];
+  }
+</script>
+
+</body>
+</html>

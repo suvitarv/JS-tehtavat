@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul></ul>
+<script>
+  'use strict'
+  let dogs = []
+
+  for (let i = 1; i <= 6; i++) {
+    let name = prompt('Give a dog name:')
+    dogs.push(name);
+  }
+
+  document.body.appendChild(document.createElement('ul'));
+
+  dogs.sort();
+  dogs.reverse();
+
+  for (let i = 0; i <= 5; i++) {
+    let li = document.querySelector('ul').
+            appendChild(document.createElement('li'));
+    li.innerHTML = dogs[i];
+  }
+
+</script>
+
+</body>
+</html>

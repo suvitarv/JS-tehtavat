@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id ="lista"></ul>
+<script>
+  'use strict'
+  const start = parseInt(prompt('Give a start year'))
+  const end = parseInt(prompt('Give a end year'))
+
+  function leap(year) {
+    let li = document.getElementById('lista').appendChild(document.createElement('li'))
+    li.innerHTML = year
+  }
+
+  for (let i = start; i <= end; i++) {
+    if (i % 4 === 0) {
+      if (i % 100 === 0) {
+        if (i % 400 === 0) {
+          leap(i)
+        }
+      }
+      else leap(i)
+    }
+  }
+
+</script>
+
+</body>
+</html>

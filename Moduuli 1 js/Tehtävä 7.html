@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  'use strict'
+const times = prompt('Number of dice rolls')
+  let numbers = []
+  for (let i =1; i < times; i++) {
+    let dice = Math.floor(Math.random() * 6 + 1)
+
+    numbers.push(dice)
+
+  }
+  const sum = numbers.reduce((a,b) => a + b, 0)
+  console.log(`Sum of dice is ${sum}`)
+</script>
+
+</body>
+</html>

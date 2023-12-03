@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="juuri"></p>
+<script>
+    'use strict'
+
+    function squreRoot() {
+      const calculate = confirm('Should I calculate the square root?')
+      if (calculate === true) {
+        const number = prompt('Give a number');
+
+        if (number >= 0) {
+          const neliojuuri = Math.sqrt(parseInt(number))
+          console.log(`The square root is ${neliojuuri}`)
+        }
+        else console.log('The square root of a negative number is not defined')
+      }
+    }
+squreRoot();
+
+</script>
+
+
+</body>
+</html>
